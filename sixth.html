@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Tags</title>
+</head>
+
+<body>
+    <center>
+        <nav>
+            <hr width="50%">
+            <table cellspacing="20px" cellpadding="2px">
+                <tr>
+                    <td>
+                        <a href="Home.html" target="_blank"><img src="./Images/home.png" alt="Home"></a>
+                    </td>
+                    <td>
+                        <a href="#video-basic"><font size="4">🎬 Video Basics</font></a>
+                    </td>
+                    <td>
+                        <a href="#video-attributes"><font size="4">⚙️ Video Attributes</font></a>
+                    </td>
+                    <td>
+                        <a href="#audio"><font size="4">🔊 Audio Tag</font></a>
+                    </td>
+                    <td>
+                        </font><a href="#video-source"><font size="4">📂 Source Element</font></a>
+                    </td>
+                    <td>
+                        <a href="#video-track"><font size="4">💬 Track Element</font></a>
+                    </td>
+                    <td>
+                        <a href="#comparison"><font size="4">📊 Comparison</font></a>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </nav>
+    </center>
+
+    <!-- Video Basics -->
+    <center>
+        <div id="video-basic">
+            <h2>🎬 Video Basics</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;!-- Basic video tag --&gt;
+&lt;video src="my-awesome-video.mp4" controls&gt;&lt;/video&gt;
+</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="300"></video>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+    <!-- Video Attributes -->
+    <center>
+        <div id="video-attributes">
+            <h2>⚙️ Video Attributes</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;video src="video.mp4" width="640" height="360" autoplay muted controls&gt;&lt;/video&gt;
+</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="320" height="180" autoplay muted
+                            controls></video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;video src="video.mp4" poster="images/video-thumbnail.jpg" controls&gt;&lt;/video&gt;
+</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.w3schools.com/html/mov_bbb.mp4" poster="https://via.placeholder.com/150"
+                            width="320" controls></video>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+    <!-- Audio Tag -->
+    <center>
+        <div id="audio">
+            <h2>🔊 Audio Tag</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;p&gt;Listen to our theme song:&lt;/p&gt;
+&lt;audio src="audio/theme-song.mp3" controls&gt;&lt;/audio&gt;
+</pre>
+                    </td>
+                    <td>
+                        <p>Listen to our theme song:</p>
+                        <audio controls>
+                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+    <!-- Video with Multiple Sources -->
+    <center>
+        <div id="video-source">
+            <h2>📂 Video with &lt;source&gt; Element</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;video controls poster="images/thumbnail.jpg"&gt;
+  &lt;source src="videos/my-video.webm" type="video/webm"&gt;
+  &lt;source src="videos/my-video.mp4" type="video/mp4"&gt;
+  Sorry, your browser doesn't support embedded videos.
+&lt;/video&gt;
+</pre>
+                    </td>
+                    <td>
+                        <video width="320" height="240" controls poster="https://via.placeholder.com/150">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+    <!-- Video with Track Element -->
+    <center>
+        <div id="video-track">
+            <h2>💬 Video with &lt;track&gt; Element</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
+&lt;/video&gt;
+</pre>
+                    </td>
+                    <td>
+                        <video width="320" height="240" controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                        <p>📄 Captions can be added with &lt;track&gt; (example not visible in this placeholder)</p>
+                    </td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+    <!-- Comparison Table -->
+    <center>
+        <div id="comparison">
+            <h2>📊 Comparison of Video Methods</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Feature</th>
+                    <th>Example 1 (&lt;source&gt; Method)</th>
+                    <th>Example 2 (src Method)</th>
+                </tr>
+                <tr>
+                    <td>Browser Compatibility</td>
+                    <td>Excellent. Multiple formats supported</td>
+                    <td>Good, but only single format</td>
+                </tr>
+                <tr>
+                    <td>Flexibility</td>
+                    <td>High. Can list many formats</td>
+                    <td>Low. Only one format</td>
+                </tr>
+                <tr>
+                    <td>Simplicity</td>
+                    <td>Complex. Multiple lines & files</td>
+                    <td>Simple. Single line</td>
+                </tr>
+                <tr>
+                    <td>Fallback for Old Browsers</td>
+                    <td>Excellent. Custom text</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Best Use Case</td>
+                    <td>Public-facing sites</td>
+                    <td>Internal or quick tests</td>
+                </tr>
+            </table>
+            <hr width="50%">
+        </div>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Paths</title>
+</head>
+
+<body>
+    <center>
+        <!-- 🌐 Navigation Bar -->
+        <nav>
+            <hr>
+            <table cellspacing="20px" cellpadding="5px" align="center">
+                <tr>
+                    <td>
+                        <a href="Home.html" target="_blank">
+                            <img src="./Images/home.png" alt="Home" width="40">
+                        </a>
+                    </td>
+                    <td><a href="#file-paths"><font size="5">📂 File Paths</font></a></td>
+                    <td><a href="#relative-paths"><font size="5">📁 Relative Paths</font></a></td>
+                    <td><a href="#absolute-paths"><font size="5">🌍 Absolute Paths</font></a></td>
+                    <td><a href="#image-paths"><font size="5">🖼️ Image Paths</font></a></td>
+                    <td><a href="#link-paths"><font size="5">🔗 Link Paths</font></a></td>
+                    <td><a href="#multipage"><font size="5">📑 Multipage</font></a></td>
+                </tr>
+            </table>
+            <hr>
+        </nav>
+    </center>
+
+    <!-- 📂 File Paths Section -->
+    <center>
+        <div id="file-paths">
+            <h2><font size="6">📂 <b>File Paths in HTML</b></font></h2>
+            <p><font size="5">👉 File paths tell the browser <b>where to find a resource</b>, such as an image, CSS file, or another page.</font></p>
+            <p><font size="5">There are two main types: <b>📁 Relative Paths</b> and <b>🌍 Absolute Paths</b>.</font></p>
+        </div>
+    </center>
+    <hr>
+
+    <!-- 📁 Relative Paths Section -->
+    <center>
+        <div id="relative-paths">
+            <h2><font size="6">📁 <b>Relative File Paths</b></font></h2>
+            <p><font size="5">✨ Relative paths depend on the <b>current file’s location</b>.</font></p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f0f0f0">
+                    <th><font size="5">📌 Type</font></th>
+                    <th><font size="5">💻 Example</font></th>
+                    <th><font size="5">📖 Usage</font></th>
+                    <th><font size="5">🖼️ Image</font></th>
+                </tr>
+                <tr>
+                    <td><font size="5">📂 Same folder</font></td>
+                    <td><code>about.html</code></td>
+                    <td><font size="5">➡️ File in the same folder</font></td>
+                    <td><img src="img.jpg" alt="Same Folder" width="100"></td>
+                </tr>
+                <tr>
+                    <td><font size="5">📁 Sub-folder</font></td>
+                    <td><code>Images/logo.png</code></td>
+                    <td><font size="5">➡️ File inside a sub-folder</font></td>
+                    <td><img src="./Images/logo.jpg" alt="Sub Folder" width="100"></td>
+                </tr>
+                <tr>
+                    <td><font size="5">⬆️ Parent folder</font></td>
+                    <td><code>../index.html</code></td>
+                    <td><font size="5">➡️ File one level up</font></td>
+                    <td><img src="https://images.unsplash.com/photo-1544883549-76b6f468c665" alt="Parent Folder" width="100"></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <hr>
+
+    <!-- 🌍 Absolute Paths Section -->
+    <center>
+        <div id="absolute-paths">
+            <h2><font size="6">🌍 <b>Absolute File Paths</b></font></h2>
+            <p><font size="5">✨ Absolute paths use the <b>full address</b> of the resource.</font></p>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f0f0f0">
+                    <th><font size="5">📌 Type</font></th>
+                    <th><font size="5">💻 Example</font></th>
+                    <th><font size="5">📖 Usage</font></th>
+                    <th><font size="5">🖼️ Image</font></th>
+                </tr>
+                <tr>
+                    <td><font size="5">🌐 Full URL</font></td>
+                    <td><code>https://example.com/image.jpg</code></td>
+                    <td><font size="5">➡️ External resources on the web</font></td>
+                    <td><img src="https://plus.unsplash.com/premium_photo-1670876807909-ffb8f420a5dc" alt="URL Path" width="100"></td>
+                </tr>
+                <tr>
+                    <td><font size="5">💻 Local absolute path</font></td>
+                    <td><code>C:/Users/Username/Documents/index.html</code></td>
+                    <td><font size="5">⚠️ Works only on your computer</font></td>
+                    <td><img src="./Images/local_absolute.png" alt="Local Absolute" width="100"></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <hr>
+
+    <!-- 🖼️ Image Paths Section -->
+    <center>
+        <div id="image-paths">
+            <h2><font size="6">🖼️ <b>Image Paths</b></font></h2>
+            <p><font size="5">✨ Use the <code>&lt;img&gt;</code> tag with file paths to display images.</font></p>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f0f0f0">
+                    <th><font size="5">📌 Example</font></th>
+                    <th><font size="5">💻 Code</font></th>
+                    <th><font size="5">📖 Usage</font></th>
+                </tr>
+                <tr>
+                    <td><img src="./Images/painting.jpg" alt="Logo" width="100" height="100"></td>
+                    <td><code>&lt;img src="images/painting.jpg" alt="Logo"&gt;</code></td>
+                    <td><font size="5">➡️ From a sub-folder</font></td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7" alt="External Image" width="100" height="100"></td>
+                    <td><code>&lt;img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7" alt="Image"&gt;</code></td>
+                    <td><font size="5">➡️ From an external URL</font></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <hr>
+
+    <!-- 🔗 Link Paths Section -->
+    <center>
+        <div id="link-paths">
+            <h2><font size="6">🔗 <b>Link Paths</b></font></h2>
+            <p><font size="5">✨ Use the <code>&lt;a&gt;</code> tag with paths to navigate.</font></p>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#f0f0f0">
+                    <th><font size="5">📌 Type</font></th>
+                    <th><font size="5">💻 Example</font></th>
+                    <th><font size="5">📖 Usage</font></th>
+                </tr>
+                <tr>
+                    <td><font size="5">📁 Relative link</font></td>
+                    <td><code>&lt;a href="first.html"&gt;Day 1&lt;/a&gt;</code><br>➡️ <a href="first.html" target="_blank">Day 1</a></td>
+                    <td><font size="5">Go to a page in the same folder</font></td>
+                </tr>
+                <tr>
+                    <td><font size="5">🌍 Absolute link</font></td>
+                    <td><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code><br>➡️ <a href="https://www.google.com/" target="_blank">Google</a></td>
+                    <td><font size="5">Go to an external site</font></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <hr>
+
+    <!-- 📑 Multipage Website Section -->
+    <center>
+        <div id="multipage">
+            <h2><font size="6">📑 <b>Multipage Website</b></font></h2>
+            <p><font size="5">✨ A multipage website is a collection of interconnected HTML pages.</font></p>
+            <p><font size="5">Example navigation:</font></p>
+            <p><font size="5">🏠 <a href="Home.html" target="_blank">HOME</a> | 📘 <a href="first.html" target="_blank">DAY 1</a> | 📗 <a href="third.html" target="_blank">DAY 3</a></font></p>
+        </div>
+    </center>
+    <hr>
+
+    <center>
+        <footer>
+            <p><font size="4">✨ Created with ❤️ and HTML only — No CSS used! ✨</font></p>
+        </footer>
+    </center>
+
+</body>
+</html>

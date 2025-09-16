@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <center>
+        <!-- 🔗 Navigation -->
+        <nav>
+            <hr>
+            <table cellspacing="15px" cellpadding="2px" align="center">
+                <tr>
+                    <!-- Home Icon -->
+                    <td>
+                        <a href="Home.html" target="_blank">
+                            <img src="./Images/home.png" alt="Home" width="30">
+                        </a>
+                    </td>
+                    <!-- Navigation Links -->
+                    <td><a href="#basic-form"><font size="5">📝 Basic Form</font></a></td>
+                    <td><a href="#radio-buttons"><font size="5">⭕ Radio</font></a></td>
+                    <td><a href="#checkboxes"><font size="5">☑️ Checkboxes</font></a></td>
+                    <td><a href="#textarea"><font size="5">🖊️ Textarea</font></a></td>
+                    <td><a href="#dropdown"><font size="5">📂 Dropdown</font></a></td>
+                    <td><a href="#special-inputs"><font size="5">🔑 Inputs</font></a></td>
+                    <td><a href="#form-explanation"><font size="5">📘 Explain</font></a></td>
+                </tr>
+            </table>
+            <hr>
+        </nav>
+
+        <!-- 📝 Basic Form -->
+        <section id="basic-form">
+            <h2><font size="6">📝 1. Basic Form Structure</font></h2>
+            <form>
+                <label for="firstName"><font size="4">👤 First Name:</font></label>
+                <input type="text" id="firstName" name="firstName"><br><br>
+
+                <label for="lastName"><font size="4">👥 Last Name:</font></label>
+                <input type="text" id="lastName" name="lastName"><br><br>
+
+                <button type="submit"><font size="4">🚀 Submit</font></button>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b> 
+            <font size="4">We used <code>&lt;label&gt;</code>, 
+            <code>&lt;input type="text"&gt;</code> and a <code>&lt;button&gt;</code>.</font></p>
+            <hr>
+        </section>
+
+        <!-- ⭕ Radio Buttons -->
+        <section id="radio-buttons">
+            <h2><font size="6">⭕ 2. Radio Buttons (Select One)</font></h2>
+            <form>
+                <p><font size="4">👕 Select T-shirt Size:</font></p>
+                <input type="radio" id="sizeS" name="shirtSize" value="small">
+                <label for="sizeS"><font size="4">S</font></label><br>
+                <input type="radio" id="sizeM" name="shirtSize" value="medium">
+                <label for="sizeM"><font size="4">M</font></label><br>
+                <input type="radio" id="sizeL" name="shirtSize" value="large">
+                <label for="sizeL"><font size="4">L</font></label>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b>
+            <font size="4">Radio buttons allow only one choice. Same <code>name</code> keeps them grouped.</font></p>
+            <hr>
+        </section>
+
+        <!-- ☑️ Checkboxes -->
+        <section id="checkboxes">
+            <h2><font size="6">☑️ 3. Checkboxes (Select Many)</font></h2>
+            <form>
+                <p><font size="4">🍕 Select Pizza Toppings:</font></p>
+                <input type="checkbox" id="toppingPep" name="toppings" value="pepperoni">
+                <label for="toppingPep"><font size="4">Pepperoni</font></label><br>
+                <input type="checkbox" id="toppingMush" name="toppings" value="mushrooms">
+                <label for="toppingMush"><font size="4">Mushrooms</font></label><br>
+                <input type="checkbox" id="toppingOni" name="toppings" value="onions">
+                <label for="toppingOni"><font size="4">Onions</font></label>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b>
+            <font size="4">Checkboxes let you select multiple toppings 🍄🧅🍖.</font></p>
+            <hr>
+        </section>
+
+        <!-- 🖊️ Textarea -->
+        <section id="textarea">
+            <h2><font size="6">🖊️ 4. Textarea (Multi-line Input)</font></h2>
+            <form>
+                <label for="comments"><font size="4">💡 Special Instructions:</font></label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b>
+            <font size="4">Textarea is for multi-line text, like feedback 📝.</font></p>
+            <hr>
+        </section>
+
+        <!-- 📂 Dropdown -->
+        <section id="dropdown">
+            <h2><font size="6">📂 5. Dropdown Menu</font></h2>
+            <form>
+                <label for="country"><font size="4">🌍 Select Country:</font></label><br>
+                <select id="country" name="country">
+                    <option value="">--Choose--</option>
+                    <option value="in">🇮🇳 India</option>
+                    <option value="us">🇺🇸 USA</option>
+                    <option value="uk">🇬🇧 UK</option>
+                    <option value="au">🇦🇺 Australia</option>
+                </select>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b>
+            <font size="4"><code>&lt;select&gt;</code> + <code>&lt;option&gt;</code> creates dropdowns.</font></p>
+            <hr>
+        </section>
+
+        <!-- 🔑 Specialized Inputs -->
+        <section id="special-inputs">
+            <h2><font size="6">🔑 6. Specialized Inputs</font></h2>
+            <form>
+                <label for="userPass"><font size="4">🔒 Password:</font></label><br>
+                <input type="password" id="userPass" name="userPassword"><br><br>
+
+                <label for="userAge"><font size="4">🎂 Age (18-99):</font></label><br>
+                <input type="number" id="userAge" name="age" min="18" max="99"><br><br>
+
+                <label for="birthDate"><font size="4">📅 Date of Birth:</font></label><br>
+                <input type="date" id="birthDate" name="dob"><br><br>
+            </form>
+            <p><b><font size="4">✨ Explanation:</font></b></p>
+            <font size="4">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                    <li>🔒 <code>password</code> hides text.</li>
+                    <li>🔢 <code>number</code> allows numeric input.</li>
+                    <li>📅 <code>date</code> opens a date picker.</li>
+                </ul>
+                        </td>
+                    </tr>
+                </table>
+            </font>
+            <hr>
+        </section>
+
+        <!-- 📘 Final Summary -->
+        <section id="form-explanation">
+            <h2><font size="6">📘 Overall Explanation of Form Elements</font></h2>
+            <font size="4">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                    <li><b>&lt;label&gt;</b> → Describes inputs 🎯</li>
+                    <li><b>&lt;input&gt;</b> → Collects text, numbers, etc. ✍️</li>
+                    <li><b>&lt;textarea&gt;</b> → Multi-line input 📝</li>
+                    <li><b>&lt;select&gt; &lt;option&gt;</b> → Dropdown choices 📂</li>
+                    <li><b>&lt;button&gt;</b> → Submits data 🚀</li>
+                </ul>
+                        </td>
+                    </tr>
+                </table>
+            </font>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <center>
+                <p><b><font size="4">✔ Summary:</font></b>
+                <font size="4">Forms make websites interactive 💡 by using 
+                <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, 
+                <code>&lt;label&gt;</code>, <code>&lt;textarea&gt;</code>, 
+                <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code>.</font></p>
+            </center>
+        </footer>
+    </center>
+</body>
+</html>

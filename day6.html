@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Tags</title>
+</head>
+
+<body>
+    <!-- 🔥 Marquee Heading -->
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+        <h1><font size="7" >🎥 HTML Media Tags</font></h1>
+    </marquee>
+
+    <center>
+        <!-- Navigation -->
+        <nav>
+            <hr width="90%">
+            <table cellspacing="20px" cellpadding="5px">
+                <tr>
+                    <td><a href="Home.html" target="_blank"><img src="./Images/home.png" alt="Home" width="40"></a></td>
+                    <td><a href="#video-basic"><font size="5">🎬 Video Basics</font></a></td>
+                    <td><a href="#video-attributes"><font size="5">⚙️ Video Attributes</font></a></td>
+                    <td><a href="#audio"><font size="5">🔊 Audio Tag</font></a></td>
+                    <td><a href="#video-source"><font size="5">📂 Source Element</font></a></td>
+                    <td><a href="#video-track"><font size="5">💬 Track Element</font></a></td>
+                    <td><a href="#embed"><font size="5">🖇️ Embed Tag</font></a></td>
+                    <td><a href="#other-media"><font size="5">📹 Other Media Tags</font></a></td>
+                </tr>
+            </table>
+            <hr width="90%">
+        </nav>
+
+        <!-- Video Basics -->
+        <div id="video-basic">
+            <h2><font size="6">🎬 Video Basics</font></h2>
+            <img src="https://www.w3schools.com/html/pic_html5.gif" alt="Video Example" width="100">
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <th><font size="5">Code</font></th>
+                    <th><font size="5">Output</font></th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;video src="my-awesome-video.mp4" controls&gt;&lt;/video&gt;</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.youtube.com/embed/HLm61p-VwIs?si=U0bzIK19ioZd8hTT" controls width="300"></video>
+                    </td>
+                </tr>
+            </table>
+            <p><a href="https://www.geeksforgeeks.org/html-video-tag/" target="_blank">📘 Read More on GFG</a></p>
+            <hr width="60%">
+        </div>
+
+        <!-- Video Attributes -->
+        <div id="video-attributes">
+            <h2><font size="6">⚙️ Video Attributes</font></h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/3179/3179068.png" alt="Attributes" width="80">
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <th><font size="5">Code</font></th>
+                    <th><font size="5">Output</font></th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;video src="video.mp4" width="640" height="360" autoplay muted controls&gt;&lt;/video&gt;</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.youtube.com/embed/HLm61p-VwIs?si=U0bzIK19ioZd8hTT" width="320" height="180" autoplay muted controls></video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;video src="video.mp4" poster="images/video-thumbnail.jpg" controls&gt;&lt;/video&gt;</pre>
+                    </td>
+                    <td>
+                        <video src="https://www.youtube.com/embed/HLm61p-VwIs?si=U0bzIK19ioZd8hTT" poster="https://via.placeholder.com/150" width="320" controls></video>
+                    </td>
+                </tr>
+            </table>
+            <p><a href="https://www.geeksforgeeks.org/html-video-tag/" target="_blank">📘 Read More on GFG</a></p>
+            <hr width="60%">
+        </div>
+
+        <!-- Audio Tag -->
+        <div id="audio">
+            <h2><font size="6">🔊 Audio Tag</font></h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/64/64454.png" alt="Audio" width="80">
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <th><font size="5">Code</font></th>
+                    <th><font size="5">Output</font></th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;p&gt;Listen to our theme song:&lt;/p&gt;
+&lt;audio src="audio/theme-song.mp3" controls&gt;&lt;/audio&gt;</pre>
+                    </td>
+                    <td>
+                        <p><font size="4">Listen to our theme song:</font></p>
+                        <audio controls>
+                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+            <p><a href="https://www.geeksforgeeks.org/html-audio-tag/" target="_blank">📘 Read More on GFG</a></p>
+            <hr width="60%">
+        </div>
+
+        <!-- Embed Tag -->
+        <div id="embed">
+            <h2><font size="6">🖇️ Embed Tag</font></h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Embed" width="80">
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <th><font size="5">Code</font></th>
+                    <th><font size="5">Output</font></th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>&lt;embed src="https://www.youtube.com/embed/HLm61p-VwIs?si=U0bzIK19ioZd8hTT" width="300" height="200"&gt;</pre>
+                    </td>
+                    <td>
+                        <embed src="https://www.youtube.com/embed/HLm61p-VwIs?si=U0bzIK19ioZd8hTT" width="300" height="200">
+                    </td>
+                </tr>
+            </table>
+            <p><a href="https://www.geeksforgeeks.org/html-embed-tag/" target="_blank">📘 Read More on GFG</a></p>
+            <hr width="60%">
+        </div>
+
+        <!-- Other Media Tags -->
+        <div id="other-media">
+            <h2><font size="6">📹 Other Important Media Tags</font></h2>
+           <font size="5">
+            <table>
+                <tr>
+                    <td>
+                         <ul type="square">
+                <li><font size="4">&lt;object&gt; – Embed multimedia content (HTML, Flash, PDF)</font></li>
+                <li><font size="4">&lt;iframe&gt; – Embed another webpage/video</font></li>
+                <li><font size="4">&lt;picture&gt; – Display multiple image sources</font></li>
+                <li><font size="4">&lt;track&gt; – Add captions/subtitles to media</font></li>
+            </ul>
+                    </td>
+                </tr>
+            </table>
+           </font>
+            <p>
+                <a href="https://www.geeksforgeeks.org/html-object-tag/" target="_blank">📘 Object Tag GFG</a> |
+                <a href="https://www.geeksforgeeks.org/html-iframe-tag/" target="_blank">📘 Iframe Tag GFG</a> |
+                <a href="https://www.geeksforgeeks.org/html-picture-tag/" target="_blank">📘 Picture Tag GFG</a>
+            </p>
+            <hr width="60%">
+        </div>
+
+    </center>
+    
+    <!-- 📥 FOOTER Section -->
+<center>
+    <footer>
+        <hr width="80%">
+        <p><font size="4">🎥 This page covered HTML <b>media tags</b> including <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;picture&gt;</code>, and <code>&lt;track&gt;</code>.</font></p>
+        <p><font size="4">💻 Media tags let websites play videos, audio, and interactive multimedia directly in the browser.</font></p>
+        <p><font size="4">© 2025 HTML Media Tags | Made with ❤️ using pure HTML by <b>Lalit Kumar</b></font></p>
+        <p><font size="4">📖 For detailed tutorials, visit <a href="https://www.geeksforgeeks.org/html-media-tags/" target="_blank">GeeksforGeeks - HTML Media Tags</a></font></p>
+        <p><a href="#video-basic">⬆️ Back to Top</a></p>
+        <hr width="80%">
+    </footer>
+</center>
+
+</body>
+
+</html>
